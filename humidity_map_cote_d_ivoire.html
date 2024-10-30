@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fdcc13bfdb43792b3433c7213fe1f73c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fdcc13bfdb43792b3433c7213fe1f73c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fdcc13bfdb43792b3433c7213fe1f73c = L.map(
+                "map_fdcc13bfdb43792b3433c7213fe1f73c",
+                {
+                    center: [7.54, -5.5471],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d13181c0c586c1f1972d8ff7a94fee83 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d13181c0c586c1f1972d8ff7a94fee83.addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+            var circle_marker_0e1d5577649d17da68ceb4e958c3e06b = L.circleMarker(
+                [5.359951, -4.008256],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_74d55ee01950b8315e394f8192ffabd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82257f88e443e3b7f27c9d1d00f0d0ab = $(`<div id="html_82257f88e443e3b7f27c9d1d00f0d0ab" style="width: 100.0%; height: 100.0%;">Abidjan: 76.9% humidity</div>`)[0];
+                popup_74d55ee01950b8315e394f8192ffabd0.setContent(html_82257f88e443e3b7f27c9d1d00f0d0ab);
+            
+        
+
+        circle_marker_0e1d5577649d17da68ceb4e958c3e06b.bindPopup(popup_74d55ee01950b8315e394f8192ffabd0)
+        ;
+
+        
+    
+    
+            var circle_marker_b8fe3c0a87ec591e954f820c53ef481f = L.circleMarker(
+                [6.827623, -5.289343],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_116752f99a425093035330e16cb56a40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70b38bb59be9fa7e368b413c2f166443 = $(`<div id="html_70b38bb59be9fa7e368b413c2f166443" style="width: 100.0%; height: 100.0%;">Yamoussoukro: 52.4% humidity</div>`)[0];
+                popup_116752f99a425093035330e16cb56a40.setContent(html_70b38bb59be9fa7e368b413c2f166443);
+            
+        
+
+        circle_marker_b8fe3c0a87ec591e954f820c53ef481f.bindPopup(popup_116752f99a425093035330e16cb56a40)
+        ;
+
+        
+    
+    
+            var circle_marker_e9adc7978c644f6870a6eb551d402409 = L.circleMarker(
+                [7.69385, -5.030311],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_22f8ad8ba93e02eafec2db04891b9896 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47b6a92728cdf5933b6b1d47823926d7 = $(`<div id="html_47b6a92728cdf5933b6b1d47823926d7" style="width: 100.0%; height: 100.0%;">Bouaké: 51.5% humidity</div>`)[0];
+                popup_22f8ad8ba93e02eafec2db04891b9896.setContent(html_47b6a92728cdf5933b6b1d47823926d7);
+            
+        
+
+        circle_marker_e9adc7978c644f6870a6eb551d402409.bindPopup(popup_22f8ad8ba93e02eafec2db04891b9896)
+        ;
+
+        
+    
+    
+            var circle_marker_d39fdd90e1585e74772a4882c43e94f9 = L.circleMarker(
+                [9.458038, -5.629324],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_5ebe9e2b8c8f3dd70ad5de9ccbe58cf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4359399520174943f91f6ff076251c6e = $(`<div id="html_4359399520174943f91f6ff076251c6e" style="width: 100.0%; height: 100.0%;">Korhogo: 52.6% humidity</div>`)[0];
+                popup_5ebe9e2b8c8f3dd70ad5de9ccbe58cf5.setContent(html_4359399520174943f91f6ff076251c6e);
+            
+        
+
+        circle_marker_d39fdd90e1585e74772a4882c43e94f9.bindPopup(popup_5ebe9e2b8c8f3dd70ad5de9ccbe58cf5)
+        ;
+
+        
+    
+    
+            var circle_marker_13b202c8836fb0f7c9cdbf55d27048c1 = L.circleMarker(
+                [6.87737, -6.451774],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_93bb3f24e29951087175019e4cbaa853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c85b699d2e6f5b60b4fdee35a9b439f1 = $(`<div id="html_c85b699d2e6f5b60b4fdee35a9b439f1" style="width: 100.0%; height: 100.0%;">Daloa: 94.6% humidity</div>`)[0];
+                popup_93bb3f24e29951087175019e4cbaa853.setContent(html_c85b699d2e6f5b60b4fdee35a9b439f1);
+            
+        
+
+        circle_marker_13b202c8836fb0f7c9cdbf55d27048c1.bindPopup(popup_93bb3f24e29951087175019e4cbaa853)
+        ;
+
+        
+    
+    
+            var circle_marker_b106fe6bf17166c9c18da22126c81102 = L.circleMarker(
+                [4.74851, -6.63602],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_2a6b80d56d61ef5c0c0d28304d05fec9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c807507ae6d341cd69ff7bed306a536 = $(`<div id="html_5c807507ae6d341cd69ff7bed306a536" style="width: 100.0%; height: 100.0%;">San Pedro: 81.6% humidity</div>`)[0];
+                popup_2a6b80d56d61ef5c0c0d28304d05fec9.setContent(html_5c807507ae6d341cd69ff7bed306a536);
+            
+        
+
+        circle_marker_b106fe6bf17166c9c18da22126c81102.bindPopup(popup_2a6b80d56d61ef5c0c0d28304d05fec9)
+        ;
+
+        
+    
+    
+            var circle_marker_1ea183e0944ac9d580c3ea35735a5511 = L.circleMarker(
+                [7.412513, -7.553832],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_d368c171d6367449c8316bfe6d61958e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d5ea413678ad403b868ce20b41c77ae = $(`<div id="html_5d5ea413678ad403b868ce20b41c77ae" style="width: 100.0%; height: 100.0%;">Man: 81.3% humidity</div>`)[0];
+                popup_d368c171d6367449c8316bfe6d61958e.setContent(html_5d5ea413678ad403b868ce20b41c77ae);
+            
+        
+
+        circle_marker_1ea183e0944ac9d580c3ea35735a5511.bindPopup(popup_d368c171d6367449c8316bfe6d61958e)
+        ;
+
+        
+    
+    
+            var circle_marker_39fe8e7210247ba676c85512a5b88c91 = L.circleMarker(
+                [9.509167, -7.563543],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_e077eaecc48e46f9b8fd9c5209240910 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f8c314782b5a7063c1214f888e15e88 = $(`<div id="html_9f8c314782b5a7063c1214f888e15e88" style="width: 100.0%; height: 100.0%;">Odienné: 57.0% humidity</div>`)[0];
+                popup_e077eaecc48e46f9b8fd9c5209240910.setContent(html_9f8c314782b5a7063c1214f888e15e88);
+            
+        
+
+        circle_marker_39fe8e7210247ba676c85512a5b88c91.bindPopup(popup_e077eaecc48e46f9b8fd9c5209240910)
+        ;
+
+        
+    
+    
+            var circle_marker_1b7b4aba8d063d54adbcf6cd95d9e003 = L.circleMarker(
+                [8.040936, -2.803568],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_4424e42f2bca6a7b4efdfee98e677ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d07821b7a8dc6253d5b88e044573e284 = $(`<div id="html_d07821b7a8dc6253d5b88e044573e284" style="width: 100.0%; height: 100.0%;">Bondoukou: 52.1% humidity</div>`)[0];
+                popup_4424e42f2bca6a7b4efdfee98e677ef8.setContent(html_d07821b7a8dc6253d5b88e044573e284);
+            
+        
+
+        circle_marker_1b7b4aba8d063d54adbcf6cd95d9e003.bindPopup(popup_4424e42f2bca6a7b4efdfee98e677ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_b3f90aa44d74ab0dc83889d79acd3984 = L.circleMarker(
+                [6.131933, -5.950666],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_fdcc13bfdb43792b3433c7213fe1f73c);
+        
+    
+        var popup_6d9054064b752abfec29384f4fa16b04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a955543ec07631ab2a71add492e928b0 = $(`<div id="html_a955543ec07631ab2a71add492e928b0" style="width: 100.0%; height: 100.0%;">Gagnoa: 71.0% humidity</div>`)[0];
+                popup_6d9054064b752abfec29384f4fa16b04.setContent(html_a955543ec07631ab2a71add492e928b0);
+            
+        
+
+        circle_marker_b3f90aa44d74ab0dc83889d79acd3984.bindPopup(popup_6d9054064b752abfec29384f4fa16b04)
+        ;
+
+        
+    
+</script>
+</html>
