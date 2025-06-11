@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee6be40b4cb3c982bfdd75fb3fb07cb4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ee6be40b4cb3c982bfdd75fb3fb07cb4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ee6be40b4cb3c982bfdd75fb3fb07cb4 = L.map(
+                "map_ee6be40b4cb3c982bfdd75fb3fb07cb4",
+                {
+                    center: [7.250771, 5.210266],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_58a9774a4903c3ddaee99ef8d2ee50fe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_58a9774a4903c3ddaee99ef8d2ee50fe.addTo(map_ee6be40b4cb3c982bfdd75fb3fb07cb4);
+        
+    
+            var tile_layer_a682861e0097538e9ea29b5d89a5482b = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/maps/projects/ee-isaacrobert/maps/459c15845e25c627afb879eee7ca00ce-8580d872084600f6bf1836404d74ce3b/tiles/{z}/{x}/{y}?token=",
+                {"attribution": "MODIS NDVI 2020-2024", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a682861e0097538e9ea29b5d89a5482b.addTo(map_ee6be40b4cb3c982bfdd75fb3fb07cb4);
+        
+    
+            var layer_control_16c6077b55dddad254f5a3229c493e04_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_58a9774a4903c3ddaee99ef8d2ee50fe,
+                },
+                overlays :  {
+                    "Vegetation Cover 2021" : tile_layer_a682861e0097538e9ea29b5d89a5482b,
+                },
+            };
+            let layer_control_16c6077b55dddad254f5a3229c493e04 = L.control.layers(
+                layer_control_16c6077b55dddad254f5a3229c493e04_layers.base_layers,
+                layer_control_16c6077b55dddad254f5a3229c493e04_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ee6be40b4cb3c982bfdd75fb3fb07cb4);
+
+        
+</script>
+</html>
